@@ -2,6 +2,12 @@
 name = "char_lcd_rgb_i2c"
 version = "0.1.0"
 edition = "2024"
+authors = ["Julian Yap <julianokyap@gmail.com>"]
+description = "Rust library for controlling RGB1602 LCD displays via MCP23017 I/O expanders"
+license = "MIT"
+repository = "https://github.com/jyap808/char_lcd_rgb_i2c"
+keywords = ["raspberry-pi", "lcd", "embedded", "i2c", "display"]
+categories = ["embedded", "hardware-support"]
 
 [lib]
 name = "char_lcd_rgb_i2c"
