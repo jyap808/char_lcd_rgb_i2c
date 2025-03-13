@@ -2,6 +2,8 @@
 
 A Rust library for controlling RGB1602 LCD displays connected to Raspberry Pi via MCP23017 I/O expanders.
 
+[![crates.io](https://img.shields.io/crates/v/char_lcd_rgb_i2c.svg)](https://crates.io/crates/char_lcd_rgb_i2c)
+
 ## Overview
 
 This project is a Rust port of a [Go implementation](https://github.com/jyap808/charLCDRGBI2C) for interfacing with RGB1602 LCD displays using the MCP23017 I/O expander chip. The MCP23017 communicates with the Raspberry Pi via I2C protocol, providing additional GPIO pins to control the LCD, backlight, and RGB LED.
@@ -27,13 +29,6 @@ This library was developed for a specific RGB1602 LCD board with the following f
 While similar to the [Adafruit 16x2 Character LCD Plus Keypad for Raspberry Pi](https://learn.adafruit.com/adafruit-16x2-character-lcd-plus-keypad-for-raspberry-pi), this board has different backlight functionality which this library specifically addresses.
 
 ## Usage
-
-Add the library to your `Cargo.toml`:
-
-```toml
-[dependencies]
-char_lcd_rgb_i2c = { git = "https://github.com/jyap808/char_lcd_rgb_i2c.git" }
-```
 
 Basic example:
 
