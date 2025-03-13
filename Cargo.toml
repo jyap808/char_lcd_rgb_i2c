@@ -1,0 +1,18 @@
+[package]
+name = "char_lcd_rgb_i2c"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "char_lcd_rgb_i2c"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lcd_demo"
+path = "examples/lcd_demo.rs"
+
+[dependencies]
+embedded-hal = "1.0.0"
+rppal = { version = "0.22.1", features = ["hal"] }
+# This version supports embedded-hal 1.0
+mcp230xx = { git = "https://github.com/gfg-development/mcp230xx.git" }

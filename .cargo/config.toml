@@ -1,0 +1,6 @@
+[target.armv7-unknown-linux-gnueabihf]
+linker = "armv7l-unknown-linux-gnueabihf-gcc"
+# Required for NixOS
+rustflags = [
+  "-C", "link-arg=-Wl,-dynamic-linker=/lib/ld-linux-armhf.so.3"
+]
